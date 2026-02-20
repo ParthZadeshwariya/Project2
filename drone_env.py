@@ -34,9 +34,9 @@ class DroneEnv(gym.Env):
 
         # random goal
         self.goal = np.array([
-            random.randint(-9, 9),
-            random.randint(-9, 9),
-            random.randint(-9, 6)
+            random.randint(6, 9),
+            random.randint(6, 9),
+            random.randint(3, 6)
         ], dtype=np.float32)
 
         # random obstacles
